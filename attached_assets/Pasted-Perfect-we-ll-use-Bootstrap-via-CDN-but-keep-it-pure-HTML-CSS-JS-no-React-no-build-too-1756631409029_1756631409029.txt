@@ -1,0 +1,129 @@
+Perfect — we’ll use **Bootstrap (via CDN)** but keep it **pure HTML/CSS/JS** (no React, no build tools).
+Here’s a **copy-paste Replit AI prompt** tailored for you:
+
+---
+
+## 🚀 PROMPT — paste into Replit Ghostwriter / AI
+
+Create a modern, responsive **portfolio** for **Abdur Rahaman Kaif** using **HTML, CSS, JavaScript, and Bootstrap 5.3 (CDN only)**. No React, no build tools.
+
+### Brand & Content
+
+* **Name:** Abdur Rahaman Kaif
+* **Roles (typed/rotating):** Frontend Developer, Web Designer, JavaScript Enthusiast
+* **Photo:** show **circular profile image** with soft shadow & border; use `<img src="assets/profile.jpg" alt="Abdur Rahaman Kaif">` placeholder and style it circular
+* **Education:** **2022–2026 (Present) — B.Tech ECE, SRM University**
+
+### My Websites (Built by Me)
+
+Make a dedicated section listing these sites as cards (title, one-liner, **Visit Site** button with real link):
+
+1. Urban Drive — [https://urban-drive-kaiftech.netlify.app/](https://urban-drive-kaiftech.netlify.app/)
+2. KaifTech — [https://kaiftech.in/](https://kaiftech.in/)
+3. GoFres Bootstrap — [https://go-fres-bootstrap.netlify.app/](https://go-fres-bootstrap.netlify.app/)
+4. GoFres Bootstrap (repeat) — [https://go-fres-bootstrap.netlify.app/](https://go-fres-bootstrap.netlify.app/)
+
+### Tech
+
+* **Bootstrap 5.3** (CSS + JS) via CDN
+* **Bootstrap Icons** via CDN
+* **Google Fonts:** Poppins (headings) + Inter (body)
+* Only HTML/CSS/JS files: `index.html`, `styles.css`, `script.js`
+
+### Look & Feel
+
+* Color variables (in CSS):
+  `--primary:#6C63FF; --accent:#00C2A8; --text:#0E1217; --muted:#64748B; --bg:#F7F8FC;`
+* Minimal, airy, rounded corners, soft shadows; hero with subtle gradient
+* Smooth scrolling; reveal-on-scroll animations; hover micro-interactions
+* **Sticky navbar** that becomes glass/blur on scroll; highlight active section
+
+### Page Sections (single page)
+
+1. **Navbar (sticky, glass on scroll)**
+
+   * Brand: “AK” pill or full name on md+
+   * Links: Home, About, Education, Skills, Projects, **My Websites**, Experience, Contact
+   * Collapse to hamburger on mobile; Scrollspy/active link highlight
+2. **Hero (full height)**
+
+   * Left: greeting, big name, **typed roles** (vanilla JS), CTA buttons: “Download CV” (`#`), “Hire Me” (scroll to Contact), social icons (GitHub/LinkedIn/X/Email using Bootstrap Icons)
+   * Right: **circular profile image** with gentle floating animation (CSS keyframes)
+3. **About Me**
+
+   * Two-column card: smaller circular photo + quick facts (Location, Email, Availability) and a short bio (2–3 lines); button “View Resume” (`#`)
+4. **Education (Timeline)**
+
+   * Vertical timeline using Bootstrap utilities:
+
+     * **2022–2026 — B.Tech ECE, SRM University (Present)** (2 bullets)
+     * Placeholder prior schooling (1 item)
+5. **Skills**
+
+   * Grid of badges and **Bootstrap progress bars** for: HTML, CSS, JavaScript, Bootstrap, Git/GitHub, Figma, REST APIs (tooltips on hover)
+6. **Projects**
+
+   * Responsive **card grid** (3/2/1 cols) with title, short description, tech badges, buttons “Live” & “Code” (`#`)
+   * “More details” opens a **Bootstrap Modal** with bullet points
+7. **My Websites (Built by Me)**
+
+   * Cards for the 4 real links above; each has site name, one-liner, **Visit Site** button (actual URL)
+   * Optional “browser mock” frame style (pure CSS)
+   * Staggered reveal animation
+8. **Experience**
+
+   * Simple vertical list or alternating timeline (role, org, dates, 2–3 achievements)
+9. **Contact**
+
+   * Left: note + social icons; Right: **contact form** (Name, Email, Message)
+   * Client-side validation; on submit show a **Bootstrap Toast** “Message sent!” and clear fields (no backend)
+10. **Footer**
+
+    * Small muted row of social links; **current year set via JS**
+
+### Animations & JS (in `script.js`)
+
+* Smooth scroll for navbar links
+* Update active nav link on scroll (basic scrollspy logic)
+* **IntersectionObserver** to add `.reveal` classes (`.reveal-up`, `.reveal-left`, `.reveal-right`, `.reveal-stagger`)
+* Back-to-top floating button (appears after 400px)
+* Contact form validation + success toast
+* **Typed roles** (vanilla JS typing/deleting loop)
+* Auto year in footer
+
+### Files
+
+**index.html**
+
+* Meta tags, title, OG placeholders
+* Link Google Fonts, Bootstrap CSS/JS, Bootstrap Icons
+* Link `styles.css` and `script.js` (defer)
+* Toast container and reusable Project modal
+
+**styles.css**
+
+* `:root` color variables; font rules (Poppins/Inter)
+* Utilities: `.shadow-soft`, `.glass`, `.pill`, `.underline-accent`, `.card-tilt`
+* Circle image utilities: `.avatar-lg` (\~200px) & `.avatar` (\~120px): circular, border, shadow
+* Keyframes: `floaty`, `fadeUp`, `slideLeft`, `slideRight`
+* Reveal classes: `.reveal*`
+* Hero gradient; navbar `.scrolled` glass effect; hover transforms
+
+**script.js**
+
+* Typed roles array: `["Frontend Developer","Web Designer","JavaScript Enthusiast"]`
+* Smooth scroll + active link highlight
+* IntersectionObserver reveal logic
+* Back-to-top toggle
+* Form validation + toast show
+* Set current year
+
+### Content placeholders
+
+* Keep About bio and Experience items as placeholders I can edit later.
+* Use `assets/profile.jpg` for the photo (works even if image missing).
+
+**Deliver the complete, runnable code** for `index.html`, `styles.css`, and `script.js` with all the above features implemented.
+
+---
+ 
