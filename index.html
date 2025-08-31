@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Abdur Rahaman Kaif</title>
+    <meta name="description" content="Portfolio of Abdur Rahaman Kaif - Frontend Developer, Web Designer, and JavaScript Enthusiast">
+    <meta property="og:title" content="Abdur Rahaman Kaif - Frontend Developer">
+    <meta property="og:description" content="Portfolio showcasing web development projects and skills">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="d-md-none pill">AK</span>
+                <span class="d-none d-md-inline">Urbantech</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#websites">My Websites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 reveal-left">
+                    <h1 class="display-6 fw-light text-muted mb-2">Hello, I'm</h1>
+                    <h2 class="display-3 fw-bold text-primary mb-3">Abdur Rahaman Kaif</h2>
+                    <h3 class="h4 text-accent mb-4">
+                        <span id="typed-roles"></span>
+                        <span class="cursor">|</span>
+                    </h3>
+                    <p class="lead text-muted mb-4">Passionate about creating beautiful, functional web experiences that make a difference.</p>
+                    
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#" class="btn btn-primary btn-lg pill">
+                            <i class="bi bi-download me-2"></i>Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg pill">
+                            <i class="bi bi-person-plus me-2"></i>Hire Me
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/KAIF21314/URBAN-DRIVE-showroom" class="social-link me-3" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/in/h-abdur-rahman-kaif-523441380" class="social-link me-3" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/abdur_rahman_kaif/#" class="social-link me-3" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="mailto:kaifabdurrahman@gmail.com" class="social-link" title="Email">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 text-center reveal-right">
+                    <div class="profile-container">
+                        <img src="./attached_assets/kaif-nahdi.jpg" alt="Abdur Rahaman Kaif" class="avatar-lg floaty">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="text-center mb-5 reveal-up">About Me</h2>
+                    
+                    <div class="card shadow-soft reveal-up">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 text-center mb-4 mb-md-0">
+                                    <img src="./attached_assets/abdur-coat.jpg" alt="Abdur Rahaman Kaif" class="avatar mb-3">
+                                    <h5 class="fw-bold">Quick Facts</h5>
+                                    <ul class="list-unstyled text-muted">
+                                        <li><i class="bi bi-geo-alt text-accent me-2"></i>Chennai, India</li>
+                                        <li><i class="bi bi-envelope text-accent me-2"></i>kaifabdurrahman@gmail.com</li>
+                                        <li><i class="bi bi-check-circle text-accent me-2"></i>Available for hire</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-md-8">
+                                    <p class="lead text-muted mb-4">
+                                        I'm a passionate frontend developer and web designer  currently pursuing my B.Tech in Electronics and Communication Engineering at SRM University. I love creating intuitive, responsive web applications that provide exceptional user experiences. 
+                                        And i can Work in technical and social media
+                                    </p>
+                                    <p class="text-muted mb-4">
+                                        With a strong foundation in modern web technologies and a keen eye for design, I specialize in building clean, efficient, and scalable web solutions. I'm always eager to learn new technologies and take on challenging projects.
+                                    </p>
+                                    <a href="https://in.linkedin.com/in/h-abdur-rahman-kaif-523441380" class="btn btn-outline-primary pill">
+                                        <i class="bi bi-file-text me-2"></i>View Resume
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 reveal-up">Education</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="timeline reveal-up">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-primary"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date text-accent fw-bold">2025 - 2029 (Present)</div>
+                                <h5 class="fw-bold">Bachelor of Technology - Electronics and Communication Engineering</h5>
+                                <p class="text-primary fw-semibold">SRM University, Chennai</p>
+                                <ul class="text-muted">
+                                    <li>Focusing on digital systems, signal processing, and modern communication technologies</li>
+                                    <li>Active participant in coding competitions and technical workshops</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-accent"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date text-accent fw-bold">2023 - 2025</div>
+                                <h5 class="fw-bold">Higher Secondary Education</h5>
+                                <p class="text-primary fw-semibold">Al-hira Model School</p>
+                                <ul class="text-muted">
+                                    <li>Completed with focus on Science and Mathematics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 reveal-up">Skills & Technologies</h2>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4 reveal-left">
+                    <h5 class="mb-3">Frontend Technologies</h5>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>HTML5</span>
+                            <span>98%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>CSS3 & SCSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Bootstrap</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4 reveal-right">
+                    <h5 class="mb-3">Tools & Other Skills</h5>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Git & GitHub</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-accent" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Figma</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-accent" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>REST APIs</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-accent" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Responsive Design</span>
+                            <span>93%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-accent" style="width: 93%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4 reveal-up">
+                <div class="skill-badges">
+                    <span class="badge bg-primary me-2 mb-2 p-2" data-bs-toggle="tooltip" title="Semantic HTML5">HTML5</span>
+                    <span class="badge bg-primary me-2 mb-2 p-2" data-bs-toggle="tooltip" title="Modern CSS3 & Flexbox/Grid">CSS3</span>
+                    <span class="badge bg-accent me-2 mb-2 p-2" data-bs-toggle="tooltip" title="ES6+ JavaScript">JavaScript</span>
+                    <span class="badge bg-accent me-2 mb-2 p-2" data-bs-toggle="tooltip" title="Bootstrap Framework">Bootstrap</span>
+                    <span class="badge bg-primary me-2 mb-2 p-2" data-bs-toggle="tooltip" title="Version Control">Git</span>
+                    <span class="badge bg-accent me-2 mb-2 p-2" data-bs-toggle="tooltip" title="UI/UX Design">Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 reveal-up">Featured Projects</h2>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 reveal-stagger">
+                    <div class="card h-100 shadow-soft card-tilt">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">E-Commerce Platform</h5>
+                            <p class="card-text text-muted">A modern e-commerce solution with shopping cart, payment integration, and admin dashboard.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-1">HTML</span>
+                                <span class="badge bg-primary me-1">CSS</span>
+                                <span class="badge bg-accent">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm flex-fill">
+                                    <i class="bi bi-eye me-1"></i>Live Demo
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm flex-fill">
+                                    <i class="bi bi-github me-1"></i>Code
+                                </a>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="ecommerce">
+                                    <i class="bi bi-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 reveal-stagger">
+                    <div class="card h-100 shadow-soft card-tilt">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Weather Dashboard</h5>
+                            <p class="card-text text-muted">Real-time weather application with location-based forecasts and interactive charts.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-1">JavaScript</span>
+                                <span class="badge bg-accent me-1">API</span>
+                                <span class="badge bg-primary">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm flex-fill">
+                                    <i class="bi bi-eye me-1"></i>Live Demo
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm flex-fill">
+                                    <i class="bi bi-github me-1"></i>Code
+                                </a>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="weather">
+                                    <i class="bi bi-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 reveal-stagger">
+                    <div class="card h-100 shadow-soft card-tilt">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Task Management App</h5>
+                            <p class="card-text text-muted">Productivity app with drag-and-drop functionality, categories, and progress tracking.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-accent me-1">JavaScript</span>
+                                <span class="badge bg-primary me-1">CSS</span>
+                                <span class="badge bg-accent">LocalStorage</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm flex-fill">
+                                    <i class="bi bi-eye me-1"></i>Live Demo
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm flex-fill">
+                                    <i class="bi bi-github me-1"></i>Code
+                                </a>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="tasks">
+                                    <i class="bi bi-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- My Websites Section -->
+    <section id="websites" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 reveal-up">My Project <small class="text-muted">(Built by Me)</small></h2>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4 reveal-stagger">
+                    <div class="card h-100 shadow-soft website-card">
+                        <div class="card-body">
+                            <div class="browser-frame mb-3">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="browser-content bg-primary bg-opacity-10 p-3 rounded-bottom">
+                                    <h5 class="fw-bold text-primary mb-2">Urban Drive</h5>
+                                </div>
+                            </div>
+                            <p class="text-muted">Modern car rental platform with sleek design and intuitive booking system. completely Built by me no Ai tools is used</p>
+                            <a href="https://urban-drive-kaiftech.netlify.app/" target="_blank" class="btn btn-primary w-100">
+                                <i class="bi bi-box-arrow-up-right me-2"></i>Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4 reveal-stagger">
+                    <div class="card h-100 shadow-soft website-card">
+                        <div class="card-body">
+                            <div class="browser-frame mb-3">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="browser-content bg-accent bg-opacity-10 p-3 rounded-bottom">
+                                    <h5 class="fw-bold text-accent mb-2">Discovery clone</h5>
+                                </div>
+                            </div>
+                            <p class="text-muted">Discovery clone fully done by me without using any Ai tools , And this is my first website </p>
+                            <a href="https://kaiftech.in/" target="_blank" class="btn btn-accent w-100">
+                                <i class="bi bi-box-arrow-up-right me-2"></i>Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4 reveal-stagger">
+                    <div class="card h-100 shadow-soft website-card">
+                        <div class="card-body">
+                            <div class="browser-frame mb-3">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="browser-content bg-primary bg-opacity-10 p-3 rounded-bottom">
+                                    <h5 class="fw-bold text-primary mb-2">GoFres Bootstrap</h5>
+                                </div>
+                            </div>
+                            <p class="text-muted">Responsive Bootstrap template with modern components and clean design patterns.</p>
+                            <a href="https://go-fres-bootstrap.netlify.app/" target="_blank" class="btn btn-primary w-100">
+                                <i class="bi bi-box-arrow-up-right me-2"></i>Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4 reveal-stagger">
+                    <div class="card h-100 shadow-soft website-card">
+                        <div class="card-body">
+                            <div class="browser-frame mb-3">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="browser-content bg-accent bg-opacity-10 p-3 rounded-bottom">
+                                    <h5 class="fw-bold text-accent mb-2">Araham Motors EV</h5>
+                                </div>
+                            </div>
+                            <p class="text-muted">This one is Real time project done by my team Urban developers for Araham-motors</p>
+                            <a href="https://ara-motors.netlify.app/" target="_blank" class="btn btn-accent w-100">
+                                <i class="bi bi-box-arrow-up-right me-2"></i>Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 reveal-up">Experience</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="timeline reveal-up">
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-primary"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date text-accent fw-bold">2025 - Present</div>
+                                <h5 class="fw-bold">Freelance Web Developer</h5>
+                                <p class="text-primary fw-semibold">Self-Employed</p>
+                                <ul class="text-muted">
+                                    <li>Developed responsive websites for local businesses and startups</li>
+                                    <li>Specialized in modern frontend technologies and user experience design</li>
+                                    <li>Successfully delivered 10+ projects with 100% client satisfaction</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-accent"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date text-accent fw-bold">2024 - 2025</div>
+                                <h5 class="fw-bold">Web Development Intern</h5>
+                                <p class="text-primary fw-semibold">colonTech Company</p>
+                                <ul class="text-muted">
+                                    <li>Assisted in frontend development of company web applications</li>
+                                    <li>Learned industry best practices and modern development workflows</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 reveal-up">Get In Touch</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4 reveal-left">
+                            <div class="contact-info">
+                                <h4 class="fw-bold mb-4">Let's work together!</h4>
+                                <p class="text-muted mb-4">
+                                    I'm always interested in new opportunities and exciting projects. 
+                                    Whether you have a question or just want to say hi, feel free to reach out!
+                                </p>
+                                
+                                <div class="contact-item mb-3">
+                                    <i class="bi bi-envelope text-accent me-3"></i>
+                                    <span>kaifabdurrahman@gmail.com</span>
+                                </div>
+                                
+                                <div class="contact-item mb-3">
+                                    <i class="bi bi-geo-alt text-accent me-3"></i>
+                                    <span>Chennai, Tamil Nadu, India</span>
+                                </div>
+                                
+                                <div class="social-links mt-4">
+                                    <a href="#" class="social-link me-3" title="GitHub">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="#" class="social-link me-3" title="LinkedIn">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="social-link me-3" title="Twitter">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                    <a href="mailto:contact@kaiftech.in" class="social-link" title="Email">
+                                        <i class="bi bi-envelope"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 reveal-right">
+                            <form id="contactForm" class="contact-form">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                    <div class="invalid-feedback">Please provide your name.</div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">Please provide a valid email.</div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    <div class="invalid-feedback">Please provide a message.</div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary w-100 pill">
+                                    <i class="bi bi-send me-2"></i>Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; <span id="currentYear"></span> Abdur Rahaman Kaif. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://github.com/KAIF21314/URBAN-DRIVE-showroom" class="social-link me-3" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/in/h-abdur-rahman-kaif-523441380" class="social-link me-3" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/abdur_rahman_kaif/#" class="social-link me-3" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="mailto:kaifabdurrahman@gmail.com" class="social-link" title="Email">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary back-to-top" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast" role="alert">
+            <div class="toast-header">
+                <i class="bi bi-check-circle text-success me-2"></i>
+                <strong class="me-auto">Success</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Message sent successfully! I'll get back to you soon.
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>
